@@ -131,6 +131,7 @@
             this.Controls.Add(this.picBox_logo);
             this.Name = "form_storekeeper";
             this.Text = "form_storekeeper";
+            this.Load += new System.EventHandler(this.form_storekeeper_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -42,7 +42,7 @@
             // 
             this.btn_showFormPriceList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(169)))), ((int)(((byte)(175)))));
             this.btn_showFormPriceList.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_showFormPriceList.Location = new System.Drawing.Point(199, 78);
+            this.btn_showFormPriceList.Location = new System.Drawing.Point(178, 119);
             this.btn_showFormPriceList.Name = "btn_showFormPriceList";
             this.btn_showFormPriceList.Size = new System.Drawing.Size(221, 45);
             this.btn_showFormPriceList.TabIndex = 60;
@@ -53,7 +53,7 @@
             // 
             this.btn_showFormBuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(169)))), ((int)(((byte)(175)))));
             this.btn_showFormBuy.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_showFormBuy.Location = new System.Drawing.Point(199, 129);
+            this.btn_showFormBuy.Location = new System.Drawing.Point(178, 170);
             this.btn_showFormBuy.Name = "btn_showFormBuy";
             this.btn_showFormBuy.Size = new System.Drawing.Size(221, 45);
             this.btn_showFormBuy.TabIndex = 59;
@@ -64,7 +64,7 @@
             // 
             this.lvl_postValue.AutoSize = true;
             this.lvl_postValue.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lvl_postValue.Location = new System.Drawing.Point(324, 11);
+            this.lvl_postValue.Location = new System.Drawing.Point(278, 11);
             this.lvl_postValue.Name = "lvl_postValue";
             this.lvl_postValue.Size = new System.Drawing.Size(78, 35);
             this.lvl_postValue.TabIndex = 58;
@@ -74,7 +74,7 @@
             // 
             this.lbl_post.AutoSize = true;
             this.lbl_post.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_post.Location = new System.Drawing.Point(231, 11);
+            this.lbl_post.Location = new System.Drawing.Point(185, 11);
             this.lbl_post.Name = "lbl_post";
             this.lbl_post.Size = new System.Drawing.Size(104, 35);
             this.lbl_post.TabIndex = 57;
@@ -84,7 +84,7 @@
             // 
             this.btn_out.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(238)))), ((int)(((byte)(252)))));
             this.btn_out.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_out.Location = new System.Drawing.Point(421, 12);
+            this.btn_out.Location = new System.Drawing.Point(375, 12);
             this.btn_out.Name = "btn_out";
             this.btn_out.Size = new System.Drawing.Size(143, 34);
             this.btn_out.TabIndex = 56;
@@ -106,7 +106,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(202)))));
-            this.ClientSize = new System.Drawing.Size(576, 267);
+            this.ClientSize = new System.Drawing.Size(522, 267);
             this.Controls.Add(this.btn_showFormPriceList);
             this.Controls.Add(this.btn_showFormBuy);
             this.Controls.Add(this.lvl_postValue);
@@ -115,6 +115,7 @@
             this.Controls.Add(this.picBox_logo);
             this.Name = "form_buy";
             this.Text = "form_buy";
+            this.Load += new System.EventHandler(this.form_buy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

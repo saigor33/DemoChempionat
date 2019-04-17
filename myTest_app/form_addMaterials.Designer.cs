@@ -255,6 +255,7 @@
             this.Controls.Add(this.picBox_logo);
             this.Name = "form_addMaterials";
             this.Text = "Добавление материалов на склад";
+            this.Load += new System.EventHandler(this.form_addMaterials_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

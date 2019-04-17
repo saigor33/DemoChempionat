@@ -175,6 +175,7 @@
             this.Controls.Add(this.tbx_login);
             this.Name = "form_registration";
             this.Text = "Регистрация";
+            this.Load += new System.EventHandler(this.form_registration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

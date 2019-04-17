@@ -203,6 +203,7 @@
             this.Controls.Add(this.btn_entery);
             this.Name = "form_orders";
             this.Text = "Заказ";
+            this.Load += new System.EventHandler(this.form_orders_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nUpDown_contItems)).EndInit();
             this.ResumeLayout(false);

@@ -61,5 +61,10 @@ namespace myTest_app
         {
 
         }
+
+        private void form_manager_Load(object sender, EventArgs e)
+        {
+            lvl_postValue.Text = userData.userPost;
+        }
     }
 }

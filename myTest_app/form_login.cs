@@ -28,7 +28,6 @@ namespace myTest_app
         private void btn_entery_Click(object sender, EventArgs e)
         {
             string sql_query = "select * from users where users_login='" + textBox_login.Text + "' and users_password='" + textBox_password.Text + "';";
-            bool statusEntery = false;
             uint countStr = 0;
             DataSet data_query = new DataSet();
             data_query= databaseConnect.select_dbAllTable(sql_query, "users");
@@ -41,7 +40,7 @@ namespace myTest_app
                     //userData userData = new userData();
                     userData.userLogin = data_query.Tables[0].Rows[0]["users_login"].ToString();
                     userData.userPost = data_query.Tables[0].Rows[0]["users_post"].ToString();
-                    MessageBox.Show(userData.userLogin + " " + userData.userPost);
+                  //  MessageBox.Show(userData.userLogin + " " + userData.userPost);
                     this.Hide();
                     switch (userData.userPost)
                     {

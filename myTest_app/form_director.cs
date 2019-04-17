@@ -27,9 +27,51 @@ namespace myTest_app
 
         private void form_director_Load(object sender, EventArgs e)
         {
-            //userData = new userData();
-            // MessageBox.Show(userData.userPost);
             lvl_postValue.Text = userData.userPost;
+        }
+        public void showMessage(string str)
+        {
+            MessageBox.Show(str);
+        }
+
+        private void btn_out_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void btn_showFormDeleteMaterials_Click(object sender, EventArgs e)
+        {
+            form_deleteMaterials form_deleteMaterials = new form_deleteMaterials();
+            this.Hide();
+            form_deleteMaterials.ShowDialog();
+            this.Show();
+        }
+
+        private void btn_showFormMaterials_Click(object sender, EventArgs e)
+        {
+            form_materials form_materials = new form_materials();
+            this.Hide();
+            form_materials.ShowDialog();
+            this.Show();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_showOrders_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            form_construct form_construct = new form_construct();
+            this.Hide();
+            form_construct.ShowDialog();
+            this.Show();
         }
     }
 }

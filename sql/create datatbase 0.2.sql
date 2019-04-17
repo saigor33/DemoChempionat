@@ -16,6 +16,7 @@ create table rulons (
     rulons_width float unsigned not null,
      rulons_lenght float unsigned not null,
      rulons_price float unsigned not null,
+     rulons_count int unsigned not null, -- отсутсвует в бд
 	primary key(rulons_id,rulons_idSpecific)
 );
 

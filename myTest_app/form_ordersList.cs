@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace myTest_app
 {
-    public partial class form_buy : Form
+    public partial class form_ordersList : Form
     {
-        public form_buy()
+        public form_ordersList()
         {
             InitializeComponent();
         }
 
-        private void form_buy_Load(object sender, EventArgs e)
+        private void form_ordersList_Load(object sender, EventArgs e)
         {
             lvl_postValue.Text = userData.userPost;
         }

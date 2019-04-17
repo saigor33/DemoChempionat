@@ -192,6 +192,7 @@
             this.Controls.Add(this.picBox_logo);
             this.Name = "form_materials";
             this.Text = "Складские материалы";
+            this.Load += new System.EventHandler(this.form_materials_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgridView_rulons)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

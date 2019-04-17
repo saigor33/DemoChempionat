@@ -26,5 +26,12 @@ namespace myTest_app
         {
             Application.Restart();
         }
+
+        private void form_résidusItems_Load(object sender, EventArgs e)
+        {
+            lvl_postValue.Text = userData.userPost;
+
+
+        }
     }
 }

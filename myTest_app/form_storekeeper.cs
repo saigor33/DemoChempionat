@@ -46,5 +46,10 @@ namespace myTest_app
             this.Close();
 
         }
+
+        private void form_storekeeper_Load(object sender, EventArgs e)
+        {
+            lvl_postValue.Text = userData.userPost;
+        }
     }
 }

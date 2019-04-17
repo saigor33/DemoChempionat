@@ -212,6 +212,7 @@
             this.Controls.Add(this.picBox_logo);
             this.Name = "form_manager";
             this.Text = "form_manager";
+            this.Load += new System.EventHandler(this.form_manager_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgridView_orders)).EndInit();
             this.ResumeLayout(false);

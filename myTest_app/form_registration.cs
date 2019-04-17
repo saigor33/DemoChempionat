@@ -36,10 +36,9 @@ namespace myTest_app
                 showMessage("Пользователь с таким логином уже зарегистрирован. Придумайте другой логин.");
                 return;
             }
-            Regex rgxPassword = new Regex("(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^.])(?=.{6,})"); //){6,}([!]{1,})
             if (tbx_password.Text == tbx_passwordTwo.Text)
             {
-                if (rgxPassword.IsMatch(tbx_password.Text))
+                if (otherMethods.test_password(tbx_password.Text))
                 {
                     password = tbx_password.Text;
                 }
@@ -86,6 +85,11 @@ namespace myTest_app
         public void showMessage(string str)
         {
             MessageBox.Show(str);
+        }
+
+        private void form_registration_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

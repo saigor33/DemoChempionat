@@ -45,6 +45,8 @@
             this.btn_close = new System.Windows.Forms.Button();
             this.picBox_logo = new System.Windows.Forms.PictureBox();
             this.btn_out = new System.Windows.Forms.Button();
+            this.lvl_postValue = new System.Windows.Forms.Label();
+            this.lbl_post = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +84,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(169)))), ((int)(((byte)(175)))));
             this.button1.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(14, 287);
+            this.button1.Location = new System.Drawing.Point(14, 338);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(298, 45);
             this.button1.TabIndex = 29;
@@ -93,7 +95,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(234, 249);
+            this.label3.Location = new System.Drawing.Point(234, 300);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 35);
             this.label3.TabIndex = 28;
@@ -103,7 +105,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(40, 249);
+            this.label5.Location = new System.Drawing.Point(40, 300);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(118, 35);
             this.label5.TabIndex = 27;
@@ -124,7 +126,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(7, 153);
+            this.label4.Location = new System.Drawing.Point(8, 204);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 35);
             this.label4.TabIndex = 26;
@@ -144,7 +146,7 @@
             // 
             this.comboBox2.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(106, 150);
+            this.comboBox2.Location = new System.Drawing.Point(106, 201);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(205, 43);
             this.comboBox2.TabIndex = 25;
@@ -163,7 +165,7 @@
             // lbl_rulonsCount
             // 
             this.lbl_rulonsCount.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_rulonsCount.Location = new System.Drawing.Point(234, 201);
+            this.lbl_rulonsCount.Location = new System.Drawing.Point(234, 252);
             this.lbl_rulonsCount.Name = "lbl_rulonsCount";
             this.lbl_rulonsCount.Size = new System.Drawing.Size(84, 35);
             this.lbl_rulonsCount.TabIndex = 24;
@@ -183,7 +185,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(8, 201);
+            this.label2.Location = new System.Drawing.Point(8, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(223, 35);
             this.label2.TabIndex = 23;
@@ -216,7 +218,7 @@
             // 
             this.btn_out.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(238)))), ((int)(((byte)(252)))));
             this.btn_out.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_out.Location = new System.Drawing.Point(361, 9);
+            this.btn_out.Location = new System.Drawing.Point(389, 9);
             this.btn_out.Name = "btn_out";
             this.btn_out.Size = new System.Drawing.Size(143, 34);
             this.btn_out.TabIndex = 31;
@@ -224,22 +226,46 @@
             this.btn_out.UseVisualStyleBackColor = false;
             this.btn_out.Click += new System.EventHandler(this.btn_out_Click);
             // 
+            // lvl_postValue
+            // 
+            this.lvl_postValue.AutoSize = true;
+            this.lvl_postValue.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lvl_postValue.Location = new System.Drawing.Point(299, 8);
+            this.lvl_postValue.Name = "lvl_postValue";
+            this.lvl_postValue.Size = new System.Drawing.Size(78, 35);
+            this.lvl_postValue.TabIndex = 49;
+            this.lvl_postValue.Text = "Менеджер";
+            // 
+            // lbl_post
+            // 
+            this.lbl_post.AutoSize = true;
+            this.lbl_post.Font = new System.Drawing.Font("Gabriola", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_post.Location = new System.Drawing.Point(206, 8);
+            this.lbl_post.Name = "lbl_post";
+            this.lbl_post.Size = new System.Drawing.Size(104, 35);
+            this.lbl_post.TabIndex = 48;
+            this.lbl_post.Text = "Вы вошли как: ";
+            // 
             // form_résidusItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(202)))));
-            this.ClientSize = new System.Drawing.Size(516, 463);
+            this.ClientSize = new System.Drawing.Size(544, 463);
+            this.Controls.Add(this.lvl_postValue);
+            this.Controls.Add(this.lbl_post);
             this.Controls.Add(this.btn_out);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.picBox_logo);
             this.Controls.Add(this.panel1);
             this.Name = "form_résidusItems";
             this.Text = "Остатки по материалам";
+            this.Load += new System.EventHandler(this.form_résidusItems_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -261,5 +287,7 @@
         private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.PictureBox picBox_logo;
         private System.Windows.Forms.Button btn_out;
+        private System.Windows.Forms.Label lvl_postValue;
+        private System.Windows.Forms.Label lbl_post;
     }
 }

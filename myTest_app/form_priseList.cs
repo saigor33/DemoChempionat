@@ -38,6 +38,7 @@ namespace myTest_app
 
         private void form_priseList_Load(object sender, EventArgs e)
         {
+            lvl_postValue.Text = userData.userPost;
             string sql_query = "select items_name as Название,rulons_composition as Материял, items_price as Цена, items_width as Ширина, items_lenght as Длинна " +
                 "from items as i inner join materialsInstruction as mInstr on i.items_idMaterials=mInstr.materialsInstruction_id" +
                     " inner join rulons  rul on rul.rulons_id = mInstr.materialsInstruction_rulonsId " +

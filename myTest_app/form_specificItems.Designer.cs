@@ -157,6 +157,7 @@
             this.Controls.Add(this.btn_back);
             this.Name = "form_specificItems";
             this.Text = "Спецификация изготовления изделий";
+            this.Load += new System.EventHandler(this.form_specificItems_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo)).EndInit();
             this.tab_.ResumeLayout(false);
             this.tab_Specific.ResumeLayout(false);

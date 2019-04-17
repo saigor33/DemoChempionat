@@ -99,5 +99,30 @@ namespace myTest_app
 
             return countInsert;
         }
+
+        public static int update_data (string sql_query)
+        {
+            int countUpdate = -1;
+            conn = new MySqlConnection(str_dbConnect);
+            conn.Open();
+            cmd = new MySqlCommand(sql_query, conn);
+            try
+            {
+                countUpdate = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+
+            return countUpdate;
+        }
     }
 }
