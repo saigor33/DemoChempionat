@@ -51,25 +51,13 @@ namespace myTest_app
         */
         public static DataSet select_dbAllTable(string sql_query, string nameTable)
         {
-           // string str_dbConnect = "server=188.242.163.78;port=32769;user ID=demo02;Password=52zyXpt2;database=demo02;";
             conn = new MySqlConnection(str_dbConnect);
             conn.Open();
-            // DataGridView dtGridView= new DataGridView();
             DataSet data = new DataSet();
             data.Locale = System.Globalization.CultureInfo.InvariantCulture;
 
             MySqlDataAdapter masterDataAdapter = new MySqlDataAdapter(sql_query, conn);
             masterDataAdapter.Fill(data, nameTable);
-
-           // BindingSource masterBindingSource = new BindingSource();
-           // BindingSource dataBindingSource = new BindingSource();
-
-            //masterBindingSource.DataSource = data;
-           // masterBindingSource.DataMember = nameTable;
-
-            // dataBindingSource.DataSource = masterBindingSource;
-
-            //dtGridView.DataSource = masterBindingSource;
            
             conn.Close();
             return data;

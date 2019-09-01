@@ -224,6 +224,7 @@
             this.cbox_statusDelete.Size = new System.Drawing.Size(166, 43);
             this.cbox_statusDelete.TabIndex = 64;
             this.cbox_statusDelete.Text = "Все";
+            this.cbox_statusDelete.SelectedIndexChanged += new System.EventHandler(this.cbox_statusDelete_SelectedIndexChanged);
             // 
             // lbl_type
             // 

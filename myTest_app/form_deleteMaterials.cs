@@ -67,6 +67,7 @@ namespace myTest_app
                 default:
                     {
                         showMessage("В поле выбора статуса списания присутсвуют посторонние символы");
+                        sql_statusDel = "";
                         return;
                     }
             }
@@ -118,6 +119,11 @@ namespace myTest_app
                 //Расчёт суммы списания
                 //вывод суммы
                 
+        }
+
+        private void cbox_statusDelete_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
  
